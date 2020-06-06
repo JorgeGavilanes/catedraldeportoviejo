@@ -252,15 +252,16 @@ header a{
 }
 .triple .frame1{
     width: 50%;
-    padding: 0 30px;
     margin: auto;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
-.triple .frame1 iframe{
-    width: 500px;
-    height: 500px;
+.triple #uno{
+    padding: 0 30px;
+    display: flex;
+}
+.triple #dos, .triple #tres, .triple #cuatro, .triple #cinco{
+    display: none;
 }
 .naranja{
     color: #ff8000;
@@ -586,12 +587,15 @@ footer .piedepagina .footert a:hover{
     .triple .bloquetriple .misas h2 span{
     font-size: 15px;
 }
-    /*.triple .frame1{
-        width: 400px;
-        height: 500px;
-    }*/
+    .triple #dos{
+        display: flex;
+    }
+    .triple #uno, .triple #tres, .triple #cuatro, .triple #cinco{
+        display: none;
+    }
     .mapa iframe{
         width: 480px;
+        height: 300px;
     }
     footer .footerc{
         height: auto;
@@ -609,4 +613,78 @@ footer .piedepagina .footert a:hover{
         width: 100%;
     }
 }
-    
+@media screen and (max-width: 500px){
+    .logoheader a h1{
+    padding-left: 6px;
+}
+    .logoheader img{
+    height: 60px;
+}
+    .logoheader{
+    font-size: 6px;
+}
+    .header{
+    padding: .3em;
+}
+    .main-nav{
+    margin: 2px 0;
+    font-size: 8px;
+}
+    .carousel-item .ctextos h2{
+    font-size: 12px;
+}
+    .carousel-item .ctextos h1{
+    font-size: 20px;
+}
+    .carousel-item .ctextos1 h1{
+    font-size: 20px;
+}
+    .carousel-item .ctextos1 h2{
+    font-size: 12px;
+}
+    .carousel-item img {
+    height: 220px;
+}
+    .textosv h1{
+        font-size: 30px;
+}
+    .textosv p{
+    font-size: 15px;
+}
+    .triple .bloquetriple .misas p,
+    .triple .bloquetriple .donaciones p{
+    font-size: 10px;
+}
+    .naranja{
+    font-size: 20px;
+}
+    .triple .bloquetriple .misas h2 span{
+    font-size: 12px;
+}
+    .triple #tres{
+        display: flex;
+    }
+    .triple #uno, .triple #dos, .triple #cuatro, .triple #cinco{
+        display: none;
+    }
+    .mapa iframe{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 420px){
+    .triple #cuatro{
+        display: flex;
+    }
+    .triple #uno, .triple #dos, .triple #tres, .triple #cinco{
+        display: none;
+    }
+}
+@media screen and (max-width: 320px){
+    .triple #cinco{
+        display: flex;
+    }
+    .triple #uno, .triple #dos, .triple #tres, .triple #cuatro{
+        display: none;
+    }
+}
