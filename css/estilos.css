@@ -374,7 +374,7 @@ footer .footerc .doble .doble2 .redessociales a i{
     font-size: 85px;
     color: #fff;
 }
-footer .footerc .doble .doble2 .redessociales a i:hover{
+footer .footerc .doble .doble2 .redessociales a i:hover, footer .footerc .doble .doble2 .redessociales a i:focus{
     font-size: 75px;
 }
 footer .piedepagina{
@@ -403,7 +403,7 @@ footer .piedepagina .footert a{
     text-decoration: none;
     font-weight: 600;
 }
-footer .piedepagina .footert a:hover{
+footer .piedepagina .footert a:hover, footer .piedepagina .footert a:focus{
     color: #ff8000;
     font-size: 15px;
 }
@@ -520,7 +520,7 @@ footer .piedepagina .footert a:hover{
     footer .footerc .doble .doble2 .redessociales a i{
     font-size: 50px;
 }
-    footer .footerc .doble .doble2 .redessociales a i:hover{
+    footer .footerc .doble .doble2 .redessociales a i:hover, footer .footerc .doble .doble2 .redessociales a i:focus{
     font-size: 45px;
 }
     footer .piedepagina p{
@@ -729,7 +729,7 @@ footer .piedepagina .footert a:hover{
     footer .footerc .doble .doble2 .redessociales a i{
     font-size: 40px;
 }
-    footer .footerc .doble .doble2 .redessociales a i:hover{
+    footer .footerc .doble .doble2 .redessociales a i:hover, footer .footerc .doble .doble2 .redessociales a i:focus{
     font-size: 35px;
 }
     footer .piedepagina{
