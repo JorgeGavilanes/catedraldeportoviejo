@@ -1,10 +1,13 @@
-/*===CATEDRAL-METROPOLITANA-DE-PORTOVIEJO-JESUS-EL-BUEN-PASTOR===*/
+/* ====CATEDRAL METROPOLITANA DE PORTOVIEJO JESUS EL BUEN PASTOR==== */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
 }
+/* ================================= 
+  HEADER
+==================================== */
 .header {
     padding: 1em;
     background-color: #fff;
@@ -54,6 +57,9 @@ header a{
     padding: 5px 35px;
     text-align: center;
 }
+/* ================================= 
+  CAROUSEL
+==================================== */
 .carousel{
     position: relative;
     padding: 20px 40px;
@@ -189,6 +195,9 @@ header a{
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
+/* ================================= 
+  SECCIONVIDEO
+==================================== */
 .seccionvideo{
     position: relative;
 }
@@ -218,6 +227,9 @@ header a{
     font-size: 35px;
     font-weight: 600;
 }
+/* ================================= 
+  MISASDONACIONES
+==================================== */
 .triple{
     display: flex;
     padding: 20px 0;
@@ -244,6 +256,7 @@ header a{
     margin: auto;
     align-items: center;
     justify-content: center;
+    border: 0;
 }
 .triple #uno{
     padding: 0 30px;
@@ -266,16 +279,23 @@ header a{
     font-size: 38px;
     color: #252525;
 }
+/* ================================= 
+  MAPA
+==================================== */
 .mapa{
     justify-content: center;
     display: flex;
     margin: 35px 0;
     text-align: center;
+    border: 0;
 }
+/* ================================= 
+  FOOTER
+==================================== */
 footer .footerc{
     width: 100%;
     height: 700px;
-    background-image: url('../media/fondofooter.webp');
+    background-image: url('../media/fondofooter.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,6 +407,9 @@ footer .piedepagina .footert a:hover{
     color: #ff8000;
     font-size: 15px;
 }
+/* ================================= 
+  MEDIAQUERIES
+==================================== */
 @media screen and (max-width: 1150px){
     .header,
     .main-nav{
