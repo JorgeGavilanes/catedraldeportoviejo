@@ -1,12 +1,10 @@
+/*===CATEDRAL-METROPOLITANA-DE-PORTOVIEJO-JESUS-EL-BUEN-PASTOR===*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
 }
-/* ================================= 
-  HEADER
-==================================== */
 .header {
     padding: 1em;
     background-color: #fff;
@@ -56,9 +54,6 @@ header a{
     padding: 5px 35px;
     text-align: center;
 }
-/* ================================= 
-  CAROUSEL
-==================================== */
 .carousel{
     position: relative;
     padding: 20px 40px;
@@ -194,9 +189,6 @@ header a{
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
-/* ================================= 
-  SECCIONVIDEO
-==================================== */
 .seccionvideo{
     position: relative;
 }
@@ -226,9 +218,6 @@ header a{
     font-size: 35px;
     font-weight: 600;
 }
-/* ================================= 
-  MISASDONACIONES
-==================================== */
 .triple{
     display: flex;
     padding: 20px 0;
@@ -277,18 +266,12 @@ header a{
     font-size: 38px;
     color: #252525;
 }
-/* ================================= 
-  MAPA
-==================================== */
 .mapa{
     justify-content: center;
     display: flex;
     margin: 35px 0;
     text-align: center;
 }
-/* ================================= 
-  FOOTER
-==================================== */
 footer .footerc{
     width: 100%;
     height: 700px;
@@ -404,10 +387,6 @@ footer .piedepagina .footert a:hover{
     color: #ff8000;
     font-size: 15px;
 }
-/* ================================= 
-  MEDIAQUERIES
-==================================== */
-
 @media screen and (max-width: 1150px){
     .header,
     .main-nav{
@@ -630,6 +609,9 @@ footer .piedepagina .footert a:hover{
     margin: 2px 0;
     font-size: 8px;
 }
+    .carousel{
+    padding: 20px 20px;
+}
     .carousel-item .ctextos h2{
     font-size: 12px;
 }
@@ -673,18 +655,123 @@ footer .piedepagina .footert a:hover{
     }
 }
 @media screen and (max-width: 420px){
+    .logoheader a, .main-nav a{
+    padding: 3px 8px;
+}
+    .carousel{
+    padding: 20px 10px;
+}
+    .textosv h1{
+        font-size: 28px;
+}
+    .textosv p{
+    font-size: 12px;
+}
+    .naranja{
+    font-size: 15px;
+}
+    .triple .bloquetriple .misas h2 span{
+    font-size: 10px;
+}
     .triple #cuatro{
         display: flex;
     }
     .triple #uno, .triple #dos, .triple #tres, .triple #cinco{
         display: none;
     }
+    .mapa iframe{
+        width: 300px;
+        height: 300px;
+    }
+    footer .footerc .doble .doble1 .cuadrofoto{
+    width: 300px;
+}
+    footer .footerc .doble .doble1 .cuadrofoto .imagencf img{
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+    footer .footerc .doble .doble1 .cuadrofoto .textocf p{
+    font-size: 28px;
+}
+    footer .footerc .doble .doble2 .contacto i{
+    font-size: 45px;
+}
+    footer .footerc .doble .doble2 .contacto p{
+    font-size: 18px;
+}
+    footer .footerc .doble .doble2 .redessociales h2{
+    font-size: 18px;
+}
+    footer .footerc .doble .doble2 .redessociales a i{
+    font-size: 40px;
+}
+    footer .footerc .doble .doble2 .redessociales a i:hover{
+    font-size: 35px;
+}
+    footer .piedepagina{
+    height: 80px;
+}
+    footer .piedepagina p{
+    font-size: 12px;
+    line-height: 18px;
+}
 }
 @media screen and (max-width: 320px){
+    .header .main-nav{
+        display: none;
+    } 
+    .carousel-item .ctextos{
+    right: 15px;
+}
+    .carousel-item .ctextos1 h2{
+    font-size: 8px;
+}
+    .triple .bloquetriple{
+        display: block;
+    }
+    .triple .bloquetriple .misas{
+        width: 100%;
+    }
+    .triple .bloquetriple .donaciones{
+        width: 100%;
+    }
     .triple #cinco{
         display: flex;
     }
     .triple #uno, .triple #dos, .triple #tres, .triple #cuatro{
         display: none;
     }
+    .mapa iframe{
+        width: 220px;
+        height: 300px;
+    }
+    footer .footerc h2{
+    padding-left: 0;
+}
+    footer .footerc .doble .doble1 .cuadrofoto{
+    width: 220px;
+}
+    footer .footerc .doble .doble1 .cuadrofoto .imagencf img{
+        width: 220px;
+    }
+    footer .footerc .doble .doble1 .cuadrofoto .textocf p{
+    font-size: 20px;
+}
+    footer .footerc .doble .doble2 .contacto p{
+    font-size: 12px;
+}
+    footer .piedepagina p{
+    font-size: 10px;
+    line-height: 12px;
+}
+    footer .footerc .doble .doble1 .cuadrofoto .textocf{
+    line-height: 18px;
+    padding: 5px;
+}
+    footer .footerc .doble .doble1 .cuadrofoto .textocf h1,
+    footer .footerc .doble .doble1 .cuadrofoto .textocf h2,
+    footer .footerc .doble .doble1 .cuadrofoto .textocf p{
+    padding: 5px 0;
+}
 }
