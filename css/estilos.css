@@ -171,10 +171,7 @@ header a{
     margin: 0 5px;
 }
 .carousel-bullet {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
+    visibility: hidden;
 }
 .carousel-bullet:hover {
     color: #ff8000;
