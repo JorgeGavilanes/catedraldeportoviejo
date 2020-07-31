@@ -17,6 +17,23 @@
         <meta name="googlebot" content="index, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
         <meta name="bingbot" content="index, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
         <meta name="keywords" content="catedral, catedral de portoviejo, portoviejo, monseñor, jesus, jesus el buen pastor, catedral de portoviejo jesus el buen pastor, santo rosario, rosario, vicente saeteros sierra, misa, en vivo, iglesia, iglesia de portoviejo, el buen pastor, parroquias de portoviejo, portoviejo catedral, donaciones, catedral metropolitana, catedrales de ecuador, eduardo castillo, pagina de la catedral, iglesias catolicas, portoviejo nace de ti">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous" type="0e5e1d3cf3184857f89a3669-text/javascript"></script>
+<script type="0e5e1d3cf3184857f89a3669-text/javascript">
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
 </head>
 <body ontouchstart>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -77,8 +94,8 @@
     <div class="triple">
         <div class="bloquetriple">
         <div class="misas">
-        <h2 class="naranja">Misas <span> Horario con fieles</span></h2>
-            <p><span>Catedral Domingos:</span><br>08:00 - 09:30 - 19:00<br><span>Lunes a Sábado:</span><br>07:00 (con laudes) - 19:00<br><span>Santo Rosario Lunes a Domingo:</span><br>18:15</p>
+        <h2 class="naranja">Misas <span> Horario (covid)</span></h2>
+            <p><span>Catedral Domingos:</span><br>07:00 - 08:00 - 09:30 - 19:00<br><span>Lunes a Sábado:</span><br>07:00 (con laudes) - 19:00<br><span>Santo Rosario Lunes a Domingo:</span><br>18:15</p>
         </div>
         <div class="donaciones">
         <h2 class="naranja">Donaciones</h2>
@@ -143,5 +160,6 @@
         </div>
     </footer>
     <script src="main.js"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="0e5e1d3cf3184857f89a3669-|49" defer=""></script>
 </body>
 </html>

@@ -92,6 +92,7 @@ header a{
 }
 .main-nav a{
     display: block;
+    transition: all 300ms ease;
 }
 .main-nav a:hover{
     color: #ff8000;
@@ -413,6 +414,7 @@ footer .footerc .doble .doble2 .redessociales a{
 footer .footerc .doble .doble2 .redessociales a i{
     font-size: 85px;
     color: #fff;
+    transition: all 300ms ease;
 }
 footer .footerc .doble .doble2 .redessociales a i:hover, footer .footerc .doble .doble2 .redessociales a i:focus{
     font-size: 75px;
@@ -442,6 +444,7 @@ footer .piedepagina .footert a{
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    transition: all 300ms ease;
 }
 footer .piedepagina .footert a:hover, footer .piedepagina .footert a:focus{
     color: #ff8000;
