@@ -1,0 +1,289 @@
+@media (max-width: 1020px) {
+    .path--none{
+        display: none;
+    }
+
+    .info{
+        font-size: 50px;
+    }
+    
+    .info__description{
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .fApi__1{
+        display: none;
+    }
+
+    .fApi__2{
+        display: block;
+    }
+}
+
+@media (max-width: 950px){
+    .nav{    
+        padding: 25px 40px;
+    }
+    
+    .nav::after{
+        width: calc(100% - 80px);
+    }
+
+    .logo__icon{
+        width: 180px;
+    }
+
+    .swiper-slide{
+        padding: 0 40px;
+    }
+
+    .laCatedral,
+    .misasDonaciones,
+    .enVivo,
+    .footer,
+    .footer__credits{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .misas__image,
+    .donaciones__image{
+        width: 180px;
+    }
+
+    .fApi__3{
+        display: block;
+    }
+
+    .fApi__2{
+        display: none;
+    }
+
+    .credit__img{
+        height: 50px;
+    }
+}
+
+@media (max-width: 790px){
+
+    .laCatedral__flex{
+        flex-direction: column;
+    }
+
+    .laCatedral__content,
+    .laCatedral__description{
+        width: 100%;
+    }
+
+    .laCatedral__description .subtitle{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .footer__content{
+        flex-direction: column;
+    }
+
+    .footer__description{
+        margin: 25px 0;
+    }
+
+    .fApi__3{
+        display: none;
+    }
+
+    .fApi__4{
+        display: block;
+    }
+}
+
+@media (max-width: 720px){
+    .title{
+        font-size: 35px;
+    }
+
+    .info{
+        font-size: 40px;
+    }
+
+    .info__description{
+        font-size: 16px;
+    }
+
+    .swiper-slide{
+        flex-direction: column-reverse;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .info__description{
+        margin-top: 10px;
+    }
+
+    .slide__content{
+        width: 100%;
+        text-align: center;
+    }
+
+    .slide__img{
+        width: 50%;
+    }
+
+    .misas::before,
+    .donaciones::before{
+        display: none;
+    }
+
+    .misas__image,
+    .donaciones__image{
+        width: 150px;
+    }
+
+    .api__1{
+        display: none;
+    }
+
+    .api__2{
+        display: block;
+    }
+}
+
+@media (max-width: 600px){
+
+    .paths{
+        display: none;
+        width: 200px;
+
+        background-color: rgb(245, 245, 245);
+
+        position: absolute;
+        top: 140px;
+        right: 0;
+
+        text-align: center;
+        border-radius: 5px;
+
+        padding: 20px 0;
+
+        z-index: 11;
+    }
+
+    .path{
+        margin: 20px 0;
+        display: block;
+    }
+
+    .paths.active{
+        display: block;
+    }
+
+    .burger{
+        display: block;
+        width: 25px;
+        transition: all 400ms ease;
+    }
+
+    .burger__elements{
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: all 400ms ease;
+    }
+
+    .burger__elements:nth-child(2){
+        margin: 5px auto;
+    }
+
+    .paths.active ~ .burger .burger__elements:nth-child(2){
+        display: none;
+    }
+
+    .paths.active ~ .burger .burger__elements:nth-child(1){
+        transform: rotate(45deg) translateY(2px);
+    }
+
+    .paths.active ~ .burger .burger__elements:nth-child(3){
+        transform: rotate(-45deg) translateY(-2px);
+    }
+
+    .api__2{
+        display: none;
+    }
+
+    .api__3{
+        display: block;
+    }
+}
+
+@media (max-width: 560px){
+
+    .slide__img{
+        width: 100%;
+    }
+
+    .misas__content,
+    .donaciones__content{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .misas__image,
+    .donaciones__image{
+        margin-bottom: 25px;
+    }
+
+    .api__3{
+        display: none;
+    }
+
+    .api__4{
+        display: block;
+    }
+
+    .button__container{
+        flex-direction: column;
+    }
+
+    .button{
+        width: 165px;
+        margin: 20px auto 0 auto;
+    }
+
+    .footer__credits{
+        flex-direction: column;
+    }
+
+    .credit{
+        width: 100%;
+    }
+
+    .credit:nth-child(1){
+        margin-bottom: 15px;
+    }
+
+    .credit__img{
+        height: auto;
+        width: 50px;
+    }
+}
+
+@media (max-width: 390px){
+
+    .info{
+        font-size: 25px;
+    }
+
+    .title{
+        font-size: 25px;
+    }
+
+    .api__4{
+        display: none;
+    }
+
+    .api__5{
+        display: block;
+    }
+}

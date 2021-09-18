@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    /* Colors */
+    --white: rgb(255, 255, 255);
+    --gray: rgb(245, 245, 245);
+    --black: rgb(0, 0, 0);
+    --orange: rgb(209, 120, 44);
+    --yellow: rgb(228, 177, 34);
+    --red: rgb(130, 41, 29);
+}
+
+body{
+    background-color: var(--white);
+}
+
+.title{
+    font-size: 50px;
+    color: var(--black);
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.title--yellow{
+    color: var(--yellow);
+}
+
+.subtitle{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.description{
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.icon{
+    margin-right: calc(45px / 2);
+    font-size: 22px;
+    color: var(--white);
+    transition: all 250ms ease;
+}
+
+.heart{
+    color: red;
+    font-size: 16px;
+}
+
+.logo__icon{
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+.logo__icon--footer{
+    margin-bottom: 0;
+}
+
+/* -------------------------------------- */
+/* ----------------NAV------------------- */
+/* -------------------------------------- */
+
+.nav{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 75px;
+}
+
+.nav::after{
+    content: "";
+    width: calc(100% - 150px);
+    height: 5px;
+
+    background-color: var(--gray);
+    color: var(--gray);
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 133px;
+
+    margin: auto;
+    z-index: 1;
+}
+
+.logo{
+    width: 55px;
+}
+
+.path{
+    margin-left: 35px;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 700;
+    transition: all 250ms ease;
+}
+
+.path:hover{
+    color: var(--orange);
+}
+
+.burger{
+    display: none;
+}
+
+/* -------------------------------------- */
+/* ------------------header-------------- */
+/* -------------------------------------- */
+
+.header{
+    width: 100%;
+    z-index: 0;
+}
+
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    padding: 0 75px;
+}
+
+.info{
+    font-weight: 400;
+    font-size: 75px;
+}
+
+.info__description{
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.slide__content,
+.slide__img{
+    display: block;
+    width: 50%;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    color: var(--gray);
+}
+
+/* -------------------------------------- */
+/* -------------laCatedral--.------------ */
+/* -------------------------------------- */
+
+.laCatedral{
+    background-color: var(--gray);
+
+    width: 100%;
+
+    text-align: center;
+    padding: 25px 75px 100px 75px;
+}
+
+.laCatedral__flex{
+    text-align: justify;
+    align-items: center;
+    display: flex;
+}
+
+.laCatedral__content{
+    text-align: center;
+}
+
+.laCatedral__content,
+.laCatedral__description{
+    width: 50%;
+    justify-content: space-around;
+}
+
+/* -------------------------------------- */
+/* ------------misasDonaciones----------- */
+/* -------------------------------------- */
+
+.misasDonaciones{
+    padding: 25px 75px 100px 75px;
+    width: 100%;
+}
+
+.misas,
+.donaciones{
+    text-align: center;
+}
+
+.misas::before,
+.donaciones::before{
+    content: "";
+    width: 5px;
+    height: 190px;
+
+    position: absolute;
+
+    color: var(--gray);
+    background-color: var(--gray);
+}
+
+.misas::before{
+    transform: translateY(calc(101px + (267px / 2) - (190px / 2)));
+}
+
+.donaciones::before{
+    transform: translateY(calc(101px + (192px / 2) - (190px / 2)));
+}
+
+.misas__content,
+.donaciones__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 35px;
+}
+
+.misas__description,
+.donaciones__description{
+    text-align: justify;
+}
+
+.misas__image,
+.donaciones__image{
+    width: 250px;
+}
+
+/* -------------------------------------- */
+/* -------------En Vivo------------------ */
+/* -------------------------------------- */
+
+.enVivo{
+    background-color: var(--gray);
+
+    width: 100%;
+
+    text-align: center;
+    padding: 25px 75px 100px 75px;
+}
+
+.api{
+    margin: 0 auto 40px auto;
+}
+
+.api__2,
+.api__3,
+.api__4,
+.api__5{
+    display: none;
+}
+
+.button__container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin: 40px 15px 0 15px;
+    padding: 15px 45px 15px calc(45px / 2);
+    border-radius: 50px;
+
+    color: var(--white);
+    background-color: var(--orange);
+    
+    display: flex;
+    align-items: center;
+
+    transition: all 250ms ease;
+}
+
+.button:hover{
+    background-color: var(--red);
+}
+
+.button--yellow{
+    background-color: var(--yellow);
+}
+
+/* -------------------------------------- */
+/* --------------Footer------------------ */
+/* -------------------------------------- */
+
+.footer{
+    background-color: var(--gray);
+    color: var(--white);
+
+    width: 100%;
+
+    text-align: center;
+    padding: 25px 75px 100px 75px;
+
+    background-image: url('../media/fondofooter.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #272727;
+}
+
+.footer__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__logo{
+    width: 250px;
+}
+
+.footer__description{
+    text-align: justify;
+    line-height: 45px;
+}
+
+.socialMedia .icon:hover{
+    color: var(--yellow);
+}
+
+.fApi__2,
+.fApi__3,
+.fApi__4{
+    display: none;
+}
+
+.footer__credits{
+    background-color: var(--black);
+    color: var(--white);
+    
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 25px 75px;
+}
+
+.credit{
+    display: flex;
+    align-items: center;
+}
+
+.credit__img{
+    height: 75px;
+    margin-right: 15px;
+}
+
+.credit__text{
+    line-height: 25px;
+}
+
